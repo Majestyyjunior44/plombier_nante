@@ -33,19 +33,17 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" media="all" on="this.media='all'" />
     <link rel="preconnect" href="https://lh3.googleusercontent.com" />
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
-    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
     <style data-purpose="typography">
       body {
-        font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-family: 'Montserrat', sans-serif;
       }
-      /* Critical CSS inlined */
-      .hero-bg-accent{background:linear-gradient(135deg,#f0f9f8 0%,#fff 100%)}
-      .card-shadow{box-shadow:0 10px 30px -5px rgba(0,0,0,0.05)}
-      .headline-font{letter-spacing:-.02em;line-height:1.1}
+      .headline-font {
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
     </style>
     <style data-purpose="custom-layout">
       /* Subtle background patterns or specific element shapes */
@@ -217,7 +215,7 @@
             <!-- Hero Image -->
             <div class="relative" data-purpose="hero-image-container">
               <div class="rounded-3xl overflow-hidden shadow-2xl relative z-10">
-                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager" fetchpriority="high" width="800" height="500"/>
+                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager" width="800" height="500"/>
               </div>
               <!-- Floating Trust Card -->
               <div class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-xl z-20 hidden sm:block border border-white">
@@ -256,8 +254,8 @@
       </section>
       <!-- END: HeroSection -->
       <!-- BEGIN: BrandsMarquee -->
-      <section class="py-12 bg-gray-50 border-y border-gray-100 overflow-hidden" style="min-height: 80px;">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style="min-height: 60px;">
+      <section class="py-12 bg-gray-50 border-y border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-center gap-16 animate-marquee">
             <div class="flex items-center gap-16 shrink-0 grayscale opacity-50 hover:opacity-100 transition-opacity">
               <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#007D9A">GROHE</text></svg>
@@ -292,21 +290,23 @@
             <div class="w-16 h-1 bg-brand mx-auto opacity-30"></div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
             <!-- Card 1 -->
-            <div class="bg-brand text-white p-8 rounded-2xl card-shadow group transition-all">
-              <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-6">
+            <div class="bg-white border border-gray-100 p-8 rounded-2xl card-shadow hover:border-brand transition-all">
+              <div class="w-12 h-12 bg-brand/5 text-brand rounded-lg flex items-center justify-center mb-6">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
                 </svg>
               </div>
               <h3 class="text-xl font-bold mb-4 uppercase">Dépannage d'urgence</h3>
-              <p class="text-white/80 text-sm mb-6">Intervention rapide pour fuites d'eau, canalisations bouchées ou pannes de chauffage.</p>
+              <p class="text-gray-500 text-sm mb-6">Installation et réparation de robinetterie, chasse d'eau, éviers et lavabos.</p>
               <div class="flex justify-end">
-                 <svg class="w-5 h-5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                 <svg class="w-5 h-5 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
                 </svg>
               </div>
             </div>
+
             <!-- Card 2 -->
             <div class="bg-white border border-gray-100 p-8 rounded-2xl card-shadow hover:border-brand transition-all">
               <div class="w-12 h-12 bg-brand/5 text-brand rounded-lg flex items-center justify-center mb-6">
@@ -322,6 +322,7 @@
                 </svg>
               </div>
             </div>
+            <!--  -->
             <!-- Card 3 -->
             <div class="bg-white border border-gray-100 p-8 rounded-2xl card-shadow hover:border-brand transition-all">
               <div class="w-12 h-12 bg-brand/5 text-brand rounded-lg flex items-center justify-center mb-6">
@@ -562,7 +563,7 @@
 
       <!-- Réalisation 1 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Rénovation salle de bain avec douche à l'italienne" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=400&h=300&fit=crop&q=80" loading="lazy" decoding="async" width="400" height="300">
+        <img alt="Rénovation salle de bain avec douche à l'italienne" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Rénovation de salle de bain</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -576,7 +577,7 @@
 
       <!-- Réalisation 2 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Installation Chauffe-eau thermodynamique" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=400&h=300&fit=crop&q=80" loading="lazy" decoding="async" width="400" height="300">
+        <img alt="Installation Chauffe-eau thermodynamique" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Chauffe-eau thermodynamique</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -590,7 +591,7 @@
 
       <!-- Réalisation 3 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Réparation fuite d'eau" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300&fit=crop&q=80" loading="lazy" decoding="async" width="400" height="300">
+        <img alt="Réparation fuite d'eau" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Dépannage de fuite</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -604,7 +605,7 @@
 
       <!-- Réalisation 4 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Installation système de chauffage central" class="w-full h-48 object-cover" src="images/img_chauffage.webp" loading="lazy" decoding="async" width="400" height="300">
+        <img alt="Installation système de chauffage central" class="w-full h-48 object-cover" src="images/img_chauffage.webp" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Chauffage central</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -618,7 +619,7 @@
 
       <!-- Réalisation 5 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Débouchage canalisations" class="w-full h-48 object-cover" src="images/img_debourcharge.avif" loading="lazy" decoding="async" width="400" height="300">
+        <img alt="Débouchage canalisations" class="w-full h-48 object-cover" src="images/img_debourcharge.avif" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Débouchage de canalisations</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -632,7 +633,7 @@
 
       <!-- Réalisation 6 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Installation plomberie logement neuf" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=400&h=300&fit=crop&q=80" loading="lazy" decoding="async" width="400" height="300">
+        <img alt="Installation plomberie logement neuf" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Installation sanitaire</h3>
           <p class="text-gray-500 text-sm mb-4">
