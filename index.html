@@ -33,10 +33,12 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
     <style data-purpose="typography">
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
       }
       .headline-font {
         letter-spacing: -0.02em;
@@ -78,6 +80,19 @@
       .animate-on-scroll.visible {
         opacity: 1;
         transform: translateY(0);
+      }
+      
+      .animate-marquee {
+        animation: marquee 20s linear infinite;
+      }
+      
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
       }
     </style>
   </head>
@@ -200,7 +215,7 @@
             <!-- Hero Image -->
             <div class="relative" data-purpose="hero-image-container">
               <div class="rounded-3xl overflow-hidden shadow-2xl relative z-10">
-                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv"/>
+                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager"/>
               </div>
               <!-- Floating Trust Card -->
               <div class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-xl z-20 hidden sm:block border border-white">
@@ -238,6 +253,34 @@
         </div>
       </section>
       <!-- END: HeroSection -->
+      <!-- BEGIN: BrandsMarquee -->
+      <section class="py-12 bg-gray-50 border-y border-gray-100 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-center gap-16 animate-marquee">
+            <div class="flex items-center gap-16 shrink-0 grayscale opacity-50 hover:opacity-100 transition-opacity">
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#007D9A">GROHE</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#006699">Hansgrohe</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#666">Ideal Standard</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#0053A6">Atlantic</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#E3000E">Thermor</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#333">De Dietrich</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#D9001B">Frisquet</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#D9001B">Saunier Duval</text></svg>
+            </div>
+            <div class="flex items-center gap-16 shrink-0 grayscale opacity-50 hover:opacity-100 transition-opacity">
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#007D9A">GROHE</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#006699">Hansgrohe</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#666">Ideal Standard</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#0053A6">Atlantic</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#E3000E">Thermor</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#333">De Dietrich</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="14" fill="#D9001B">Frisquet</text></svg>
+              <svg class="h-10 w-auto" viewBox="0 0 80 30"><text x="40" y="22" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="12" fill="#D9001B">Saunier Duval</text></svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: BrandsMarquee -->
       <!-- BEGIN: ServicesSection -->
       <section class="py-24 bg-white" id="services">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -517,7 +560,7 @@
 
       <!-- Réalisation 1 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop">
+        <img alt="Rénovation salle de bain avec douche à l'italienne" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" loading="lazy">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Rénovation de salle de bain</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -531,7 +574,7 @@
 
       <!-- Réalisation 2 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&h=400&fit=crop">
+        <img alt="Installation Chauffe-eau thermodynamique" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&h=400&fit=crop" loading="lazy">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Chauffe-eau thermodynamique</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -545,7 +588,7 @@
 
       <!-- Réalisation 3 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop">
+        <img alt="Réparation fuite d'eau" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" loading="lazy">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Dépannage de fuite</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -559,7 +602,7 @@
 
       <!-- Réalisation 4 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img class="w-full h-48 object-cover" src="images/img_chauffage.webp">
+        <img alt="Installation système de chauffage central" class="w-full h-48 object-cover" src="images/img_chauffage.webp" loading="lazy">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Chauffage central</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -573,7 +616,7 @@
 
       <!-- Réalisation 5 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img class="w-full h-48 object-cover" src="images/img_debourcharge.avif">
+        <img alt="Débouchage canalisations" class="w-full h-48 object-cover" src="images/img_debourcharge.avif" loading="lazy">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Débouchage de canalisations</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -587,7 +630,7 @@
 
       <!-- Réalisation 6 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop">
+        <img alt="Installation plomberie logement neuf" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" loading="lazy">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Installation sanitaire</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -750,6 +793,7 @@
               <!-- Google Maps -->
               <div class="rounded-3xl overflow-hidden h-48 border border-gray-200">
                 <iframe
+                  title="Carte Google Maps - SPL Plombier Nantes"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2681.471076533482!2d-1.5683768234375!3d47.20572799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec9c3d9c87e7%3A0x9b3e6f0e0e0e0e0e!2s38%20Rue%20de%20la%20Bottiere%2C%2044300%20Nantes%2C%20France!5e0!3m2!1sfr!2sfr!4v1640000000000!5m2!1sfr!2sfr"
                   width="100%"
                   height="100%"
