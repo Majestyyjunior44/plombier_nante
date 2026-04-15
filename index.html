@@ -12,7 +12,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://lesaintplombier.fr" />
     <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" defer></script>
     <!-- Custom Tailwind Config -->
     <script>
       tailwind.config = {
@@ -33,7 +33,7 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" media="all" on="this.media='all'" />
     <link rel="preconnect" href="https://lh3.googleusercontent.com" />
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
     <style data-purpose="typography">
@@ -215,7 +215,7 @@
             <!-- Hero Image -->
             <div class="relative" data-purpose="hero-image-container">
               <div class="rounded-3xl overflow-hidden shadow-2xl relative z-10">
-                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager"/>
+                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager" width="800" height="500"/>
               </div>
               <!-- Floating Trust Card -->
               <div class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-xl z-20 hidden sm:block border border-white">
@@ -429,7 +429,7 @@
             </div>
             <div class="lg:w-1/2 relative">
               <div class="rounded-3xl overflow-hidden shadow-2xl">
-                <img alt="Plombier intervenant sur un système de chauffage central dans un immeuble à Nantes" class="w-full h-[500px] object-cover" src="images/imgpl.avif"/>
+                <img alt="Plombier intervenant sur un système de chauffage central dans un immeuble à Nantes" class="w-full h-[500px] object-cover" src="images/imgpl.avif" width="800" height="500"/>
               </div>
               <div class="absolute -top-6 -right-6 bg-white p-6 rounded-2xl shadow-xl flex flex-col items-center justify-center text-center border-t-4 border-brand">
                 <span class="text-4xl font-black text-secondary">10+</span>
@@ -560,7 +560,7 @@
 
       <!-- Réalisation 1 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Rénovation salle de bain avec douche à l'italienne" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" loading="lazy">
+        <img alt="Rénovation salle de bain avec douche à l'italienne" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Rénovation de salle de bain</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -574,7 +574,7 @@
 
       <!-- Réalisation 2 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Installation Chauffe-eau thermodynamique" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&h=400&fit=crop" loading="lazy">
+        <img alt="Installation Chauffe-eau thermodynamique" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Chauffe-eau thermodynamique</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -588,7 +588,7 @@
 
       <!-- Réalisation 3 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Réparation fuite d'eau" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" loading="lazy">
+        <img alt="Réparation fuite d'eau" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Dépannage de fuite</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -602,7 +602,7 @@
 
       <!-- Réalisation 4 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Installation système de chauffage central" class="w-full h-48 object-cover" src="images/img_chauffage.webp" loading="lazy">
+        <img alt="Installation système de chauffage central" class="w-full h-48 object-cover" src="images/img_chauffage.webp" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Chauffage central</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -616,7 +616,7 @@
 
       <!-- Réalisation 5 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Débouchage canalisations" class="w-full h-48 object-cover" src="images/img_debourcharge.avif" loading="lazy">
+        <img alt="Débouchage canalisations" class="w-full h-48 object-cover" src="images/img_debourcharge.avif" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Débouchage de canalisations</h3>
           <p class="text-gray-500 text-sm mb-4">
@@ -630,7 +630,7 @@
 
       <!-- Réalisation 6 -->
       <div class="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition">
-        <img alt="Installation plomberie logement neuf" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" loading="lazy">
+        <img alt="Installation plomberie logement neuf" class="w-full h-48 object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" loading="lazy" width="600" height="400">
         <div class="p-6">
           <h3 class="text-lg font-bold mb-2 uppercase">Installation sanitaire</h3>
           <p class="text-gray-500 text-sm mb-4">
