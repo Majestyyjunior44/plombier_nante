@@ -33,9 +33,11 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet" media="all" on="this.media='all'" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" /></noscript>
     <link rel="preconnect" href="https://lh3.googleusercontent.com" />
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com" />
     <style data-purpose="typography">
       body {
         font-family: 'Montserrat', sans-serif;
@@ -215,7 +217,7 @@
             <!-- Hero Image -->
             <div class="relative" data-purpose="hero-image-container">
               <div class="rounded-3xl overflow-hidden shadow-2xl relative z-10">
-                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager" width="800" height="500"/>
+                <img alt="Salle de bain moderne avec douche à l'italienne, lavabo suspendu et miroir" class="w-full h-[500px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0O44QwhgwYXpDlp5uCF1koQeCDTBFqHvIF9X68LysKnINIMTVqtkF-mpkIG3aimkrCQ9ax3bgbkktBb6ibgTz578kU6bqRvOS2gvX1ifr8eJBi5tWl6GKB2AfUYJ62QjkjEVtReaLbvJbzlQe5PdpUDs_flX69hQpT4bYK1Xwn8SngOdTS-PamrfRlMt1FvdzGNJV2KkbyAY3PY5vyJJDkb5vQS4NpwyVJwKIh3pjvaloLvkyYLM6Nb7l62STf55jpGD2GORoJEAv" loading="eager" fetchpriority="high" width="800" height="500"/>
               </div>
               <!-- Floating Trust Card -->
               <div class="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-xl z-20 hidden sm:block border border-white">
