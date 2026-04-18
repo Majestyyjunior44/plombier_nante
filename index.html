@@ -881,7 +881,7 @@
               </p>
             </div>
             <!-- Form Section -->
-            <form action="https://formspree.io/f/xdojgqdz" method="POST" class="space-y-4 max-w-md">
+            <form id="guide-form" action="https://formspree.io/f/xdojgqdz" method="POST" class="space-y-4 max-w-md">
               <div class="relative">
                 <label class="sr-only" for="guide-name">Votre nom</label>
                 <input class="w-full px-6 py-4 rounded-xl border-2 border-emerald-100 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none transition-all text-emerald-900 placeholder:text-emerald-300 bg-white" id="guide-name" name="name" placeholder="Votre nom" type="text" required/>
@@ -899,6 +899,21 @@
                 <span>Télécharger mon guide</span>
               </button>
             </form>
+            <script>
+              document.getElementById('guide-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('guide-name').value;
+                const phone = document.getElementById('guide-phone').value;
+                const email = document.getElementById('guide-email').value;
+                const message = encodeURIComponent(`Bonjour, je souhaite recevoir le guide gratuit "5 erreurs de plomberie". Nom: ${name}, Téléphone: ${phone}, Email: ${email}`);
+                window.open(`https://wa.me/33661101685?text=${message}`, '_blank');
+                // Simuler téléchargement
+                const link = document.createElement('a');
+                link.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent('GUIDE GRATUIT - 5 ERREURS DE PLOMBERIE\n\nMerci de votre intérêt ! Contactez-nous pour recevoir votre guide complet.');
+                link.download = 'guide-plomberie.txt';
+                link.click();
+              });
+            </script>
             <div class="flex items-center gap-4 pt-4">
               <p class="text-emerald-700/60 text-sm font-medium">Guide gratuit offert par LE SAINT PLOMBIER Nantes</p>
             </div>
