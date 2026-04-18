@@ -855,7 +855,7 @@
               <!-- Book Spine -->
               <div class="absolute left-0 top-0 w-4 h-full bg-emerald-800 rounded-l-sm transform -translate-x-full origin-right rotate-y-90"></div>
               <!-- Book Front Cover -->
-              <div class="w-full h-full rounded-r-lg shadow-2xl flex flex-col p-6 relative overflow-hidden book-shadow bg-[linear-gradient(to_bottom,_white_50%,_#047857_50%)]">
+              <div class="w-full h-full rounded-r-lg shadow-2xl flex flex-col p-6 relative overflow-hidden bg-[linear-gradient(to_bottom,_white_50%,_#047857_50%)]">
                 <!-- Cover Content -->
                 <div class="mt-8">
                   <span class="text-xs font-bold tracking-widest uppercase text-emerald-900">GUIDE PRATIQUE</span>
@@ -863,8 +863,8 @@
                   <h3 class="text-2xl md:text-3xl font-black leading-tight text-emerald-950">5 ERREURS<br/>DE PLOMBERIE<br/>À ÉVITER<br/><span class="text-emerald-400">À LA MAISON</span></h3>
                 </div>
                 <div class="mt-auto flex items-center gap-3">
-                  <!-- <svg class="w-6 h-6 text-emerald-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>-->
-                  <span class="text-emerald-100 text-[10px] font-semibold tracking-tighter">SPL</span>
+                  <svg class="w-6 h-6 text-emerald-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/></svg>
+                  <span class="text-emerald-100 text-[10px] font-semibold tracking-tighter">LE SAINT PLOMBIER</span>
                 </div>
               </div>
             </div>
@@ -872,7 +872,7 @@
           <!-- Right: Content & Form -->
           <div class="w-full md:w-1/2 flex flex-col space-y-6">
             <div class="space-y-4">
-              <span class="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full tracking-wide">GUIDE Gratuit</span>
+              <span class="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-800 text-xs font-bold rounded-full tracking-wide">GUIDE GRATUIT</span>
               <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-emerald-950 leading-[1.1] tracking-tight">
                 5 ERREURS DE PLOMBERIE QUI PEUVENT VOUS COÛTER CHER
               </h1>
@@ -881,18 +881,26 @@
               </p>
             </div>
             <!-- Form Section -->
-            <form action="" method="POST" class="space-y-4 max-w-md">
+            <form action="https://formspree.io/f/xdojgqdz" method="POST" class="space-y-4 max-w-md">
+              <div class="relative">
+                <label class="sr-only" for="guide-name">Votre nom</label>
+                <input class="w-full px-6 py-4 rounded-xl border-2 border-emerald-100 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none transition-all text-emerald-900 placeholder:text-emerald-300 bg-white" id="guide-name" name="name" placeholder="Votre nom" type="text" required/>
+              </div>
+              <div class="relative">
+                <label class="sr-only" for="guide-phone">Votre numéro de téléphone</label>
+                <input class="w-full px-6 py-4 rounded-xl border-2 border-emerald-100 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none transition-all text-emerald-900 placeholder:text-emerald-300 bg-white" id="guide-phone" name="phone" placeholder="Votre numéro de téléphone" type="tel" required/>
+              </div>
               <div class="relative">
                 <label class="sr-only" for="guide-email">Votre adresse e-mail</label>
                 <input class="w-full px-6 py-4 rounded-xl border-2 border-emerald-100 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none transition-all text-emerald-900 placeholder:text-emerald-300 bg-white" id="guide-email" name="email" placeholder="Votre adresse e-mail" type="email" required/>
               </div>
               <button class="w-full py-4 px-8 bg-emerald-700 hover:bg-emerald-800 active:scale-[0.98] transition-all text-white font-bold rounded-xl shadow-lg shadow-emerald-200 flex items-center justify-center gap-3" type="submit">
-                <span>Télécharger mon guide</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                <span>Télécharger mon guide</span>
               </button>
             </form>
             <div class="flex items-center gap-4 pt-4">
-              <p class="text-emerald-700/60 text-sm font-medium">Guide gratuit offert par SPL Plombier Nantes</p>
+              <p class="text-emerald-700/60 text-sm font-medium">Guide gratuit offert par LE SAINT PLOMBIER Nantes</p>
             </div>
           </div>
         </div>
